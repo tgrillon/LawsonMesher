@@ -379,7 +379,7 @@ On insère ensuite les points suivants en utilisant la méthode `insert_vertex(p
 void TMesh::insert_vertex(const Point &p)
 // p : Point à insérer.
 {
-    // locate_triangle (méthode de localisation de triangle présentée précédemment) retourne la paire suivante : [ found, [ i_face, i_edge ] ]
+    // locate_triangle (méthode de localisation de triangle présentée ultérieurement) retourne la paire suivante : [ found, [ i_face, i_edge ] ]
     // found : renvoie vrai si une face / arête du maillage contient le point, faux sinon.  
     // i_face : renvoie l'indice de la face qui contient le point ou bien l'indice de la face infinie sur laquelle l'insertion hors de l'enveloppe convexe commence.
     // i_edge : Si le point est sur une arête, correspond à l'indice local du sommet opposé à cette arête dans la face d'indice i_face. Dans le cas où il n'y a pas d'intersection avec une arête, cette valeur est mise à -1.   
