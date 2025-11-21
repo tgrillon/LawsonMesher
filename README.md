@@ -46,7 +46,7 @@ Installer les packages suivants :
 sudo apt install libsdl2-dev libsdl2-image-dev libglew-dev premake4
 ```
 
-# Compilation
+# Compilation et exécution
 
 - Configuration/Build
 
