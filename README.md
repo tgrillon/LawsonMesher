@@ -116,6 +116,11 @@ L'application comporte trois fenêtres dockables :
 
 # Rapport
 
+- [Maillage triangulaire](#triangulated_mesh)
+- [Diffusion de chaleur](#heat_diffusion)
+- [Triangulation de Delaunay](#lawson_mesher)
+
+<a id="triangulated_mesh"><\a>
 ## Maillage triangulaire
 
 Un maillage triangulaire (`TMesh`) peut se définir comme un ensemble de faces et de sommets.
@@ -130,6 +135,7 @@ Pour visualiser le maillage, la méthode `save_obj` permet de sauvegarder sa gé
 
 ![Maillage triangulaire](./data/rapport/mesh.png "Maillage triangulaire")
 
+<a id="heat_diffusion"><\a>
 ## Diffusion de la chaleur
 
 Pour la diffusion de la chaleur, on utilise la formule suivante :
@@ -177,6 +183,7 @@ L'application permet d'afficher les normales aux sommets ainsi que les normales 
 Pour calculer la courbure, on prend la norme du vecteur calculé en utilisant le laplacien et on normalise cette valeur entre 0 et 1 (pour pouvoir l'utiliser par la suite comme coordonnées de texture) en la divisant par le maximum. On obtient ceci :
 ![Courbure](./data/rapport/courbure.png "Courbure")
 
+<a id="lawson_mesher"><\a>
 # Triangulation de Delaunay
 
 ![Alpes](./data/rapport/alpes.png "Courbure")
